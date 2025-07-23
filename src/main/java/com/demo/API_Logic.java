@@ -39,14 +39,14 @@ public class API_Logic extends API_Util {
             user.setEmail(email);
             user.setAddress(address);
             user.setPhoneNumber(phoneNumber);
-            System.out.println("User updated successfully.");
+            System.out.println(Success);
         } else {
             System.out.println(NotFound);
         }
     }
     public void deleteUser(int userId) throws InterruptedException {
         if (userMap.remove(userId) != null) {
-            System.out.println("User deleted successfully.");
+            System.out.println(Success);
         } else {
             System.out.println(NotFound);
         }
